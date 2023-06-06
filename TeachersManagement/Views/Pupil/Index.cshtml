@@ -1,0 +1,40 @@
+﻿@model PupilIndexViewModel
+@{ 
+    ViewBag.Title = "Pupils page";
+ 
+}
+<div class="row">
+    <div>
+        <a class="btn btn-outline-primary m-1" asp-action="create" asp-controller="pupil">++ Add new pupil</a>
+    </div>
+    <h2 class="text-center">Pupils list</h2>
+    <table class="table table-bordered table-striped col-md-12 col-lg-10 col-sm-12 col-xl-8">
+       <thead>
+           <tr>
+               <th>Id</th>
+               <th>Full Name</th>
+               <th>Old</th>
+               <th>Learning grade</th>
+               <th>Teacher Name</th>
+               <th>Navigation</th>
+           </tr>
+       </thead>
+       <tbody>           
+              @foreach (var pupil in Model.Pupils ?? Model.Pupils.ToList())
+               {
+                   <tr>
+                       <td>@pupil.Id</td>
+                       <td>@pupil.FullName</td>
+                       <td>@pupil.Old</td>
+                       <td>@pupil.Grade</td>
+                       <td>@pupil.TName</td>
+                       <td>
+                           <a class="btn btn-warning" asp-controller="pupil" asp-action="update" asp-route-id="@pupil.Id">Update</a>
+                           <a class="btn btn-danger" asp-controller="pupil" asp-action="delete" asp-route-id="@pupil.Id">Delete</a>
+                           <a class="btn btn-primary" asp-controller="pupil" asp-action="details" asp-route-id="@pupil.Id">View </a>
+                       </td>
+                   </tr>
+               }
+       </tbody>
+    </table>
+</div>

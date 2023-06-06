@@ -1,0 +1,65 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\myPractic\\TeachersManagement\\TeachersManagement\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\myPractic\\TeachersManagement\\TeachersManagement\\wwwroot\\images\\200117800468_258660.jpg",
+      "PackagePath": "staticwebassets\\images\\200117800468_258660.jpg"
+    },
+    {
+      "Id": "D:\\myPractic\\TeachersManagement\\TeachersManagement\\wwwroot\\lib\\Jquery\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\Jquery\\jquery.js"
+    },
+    {
+      "Id": "D:\\myPractic\\TeachersManagement\\TeachersManagement\\wwwroot\\lib\\Jquery\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\Jquery\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\myPractic\\TeachersManagement\\TeachersManagement\\wwwroot\\lib\\bootstrap\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\myPractic\\TeachersManagement\\TeachersManagement\\wwwroot\\lib\\bootstrap\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\myPractic\\TeachersManagement\\TeachersManagement\\wwwroot\\lib\\dataTables\\dataTables.select.min.js",
+      "PackagePath": "staticwebassets\\lib\\dataTables\\dataTables.select.min.js"
+    },
+    {
+      "Id": "D:\\myPractic\\TeachersManagement\\TeachersManagement\\wwwroot\\lib\\dataTables\\jquery.dataTables.min.css",
+      "PackagePath": "staticwebassets\\lib\\dataTables\\jquery.dataTables.min.css"
+    },
+    {
+      "Id": "D:\\myPractic\\TeachersManagement\\TeachersManagement\\wwwroot\\lib\\dataTables\\jquery.dataTables.min.js",
+      "PackagePath": "staticwebassets\\lib\\dataTables\\jquery.dataTables.min.js"
+    },
+    {
+      "Id": "D:\\myPractic\\TeachersManagement\\TeachersManagement\\wwwroot\\lib\\dataTables\\select.dataTables.min.css",
+      "PackagePath": "staticwebassets\\lib\\dataTables\\select.dataTables.min.css"
+    },
+    {
+      "Id": "D:\\myPractic\\TeachersManagement\\TeachersManagement\\wwwroot\\scripts\\site.js",
+      "PackagePath": "staticwebassets\\scripts\\site.js"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.TeachersManagement.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.TeachersManagement.props",
+      "PackagePath": "build\\TeachersManagement.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.TeachersManagement.props",
+      "PackagePath": "buildMultiTargeting\\TeachersManagement.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.TeachersManagement.props",
+      "PackagePath": "buildTransitive\\TeachersManagement.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

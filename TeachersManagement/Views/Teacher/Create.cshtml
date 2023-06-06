@@ -1,0 +1,35 @@
+﻿@model Teacher
+    <div><h2 class="text-center fw-bolder">Create new teacher</h2></div>
+<form asp-action="create" asp-controller="teacher" method="post" class="col-md-8 col-sm-10 col-lg-6 col-xl-4">
+    <div class="row m-2">
+        <label asp-for="@Model.FirstName" class="fw-bold"></label>        
+            <input asp-for="@Model.FirstName" placeholder="Andrey..." />
+        <span class="text-danger" asp-validation-for="@Model.FirstName"></span>
+    </div>
+    <div class="row m-2">
+        <label asp-for="@Model.LastName" class="fw-bold"></label>        
+            <input placeholder="Sholoxov..." asp-for="@Model.LastName" />       
+        <span class="text-danger" asp-validation-for="@Model.LastName"></span>
+    </div>
+    <div class="row m-2">
+        <label asp-for="@Model.DateOfBirth" class="fw-bold"></label>        
+            <input  asp-for="@Model.DateOfBirth" />  
+        <span class="text-danger" asp-validation-for="@Model.DateOfBirth"></span>
+    </div>
+    <div class="row m-2">
+        <label asp-for="@Model.Specialty" class="fw-bold"></label>        
+        <select asp-items="@Html.GetEnumSelectList<Specialty>()" asp-for="@Model.Specialty">
+            <option>Select specialty...</option>
+        </select>        
+        <span class="text-danger" asp-validation-for="@Model.Specialty"></span>
+    </div>
+    <div class="row m-2">
+        <label asp-for="@Model.Experience" class="fw-bold"></label>       
+            <input placeholder="15..." asp-for="@Model.Experience" />        
+        <span class="text-danger" asp-validation-for="@Model.Experience"></span>
+    </div>
+    <div>
+        <button class="btn btn-primary m-1" type="submit">Create</button>
+        <a asp-controller="teacher" asp-action="index" class="btn btn-warning m-1">Cancel</a>
+    </div>
+</form>

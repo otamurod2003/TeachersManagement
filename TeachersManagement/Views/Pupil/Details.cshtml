@@ -1,0 +1,24 @@
+﻿@model PupilDetailsViewModel
+@{
+    ViewBag.Title = "Pupil details";
+}
+<h4 class="text-center fw-bold">Pupil details</h4>
+<div class="card col-lg-6 col-md-8 col-sm-10 col-xl-4">
+    <div class="card-header">
+        <h2>@Model.Pupil.FullName</h2>
+    </div>
+    <div class="card-body">
+        <ul>
+            <li> <label class="fw-bolder">Pupil Id:</label> @Model.Pupil.Id</li>
+            <li><label class="fw-bolder">Learning grade: </label> @Model.Pupil.Grade</li>
+            <li><label class="fw-bolder">Educator Name:</label> @Model.Pupil.TName</li>
+            <li><label class="fw-bolder">Old:</label> @Model.Pupil.Old</li>
+        </ul>
+    </div>
+    <div class="card-footer">
+        <a asp-controller="pupil" asp-action="update" asp-route-id="@Model.Pupil.Id" class="btn btn-warning">Update</a>
+        <a asp-controller="pupil" asp-action="delete" asp-route-id="@Model.Pupil.Id" class="btn btn-danger">Delete</a>
+        <a asp-controller="pupil" asp-action="index" class="btn btn-primary">Cancel</a>
+    </div>
+
+</div>

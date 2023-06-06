@@ -1,0 +1,45 @@
+﻿@model PupilUpdateViewModel
+@{ 
+    ViewBag.Title = "Update pupil";
+  
+}
+<form asp-action="update" asp-controller="pupil" method="post" class="col-md-8 col-sm-10 col-lg-6 col-xl-4">
+    <div class="">
+        <label class="form-label" asp-for="@Model.FullName"></label>
+        <div>
+            <input asp-for="@Model.FullName" />
+        </div>
+        <span class="text-danger" asp-validation-for="@Model.FullName"></span>
+    </div>
+    <div class="">
+        <label asp-for="@Model.Old"></label>
+        <div>
+            <input asp-for="@Model.Old" />
+        </div>
+        <span class="text-danger" asp-validation-for="@Model.Old"></span>
+    </div>
+    <div class="">
+        <label asp-for="@Model.Grade"></label>
+        <div>
+            <select asp-items="@Html.GetEnumSelectList<Grades>()" asp-for="@Model.Grade">
+                <option>Please select...</option>
+            </select>
+        </div>
+        <span class="text-danger" asp-validation-for="@Model.Grade"></span>
+    </div>
+    @*<div>
+        <label>Educator name</label>
+        <div>
+            <select name="">
+                @foreach (var educator in ViewBag.Teachers)
+                {
+                    <option value="@educator.TeacherId">@educator.TName</option>
+                }
+            </select>
+        </div>
+    </div>*@
+    <div>
+        <button class="btn btn-primary m-1" type="submit">Update</button>
+        <a asp-controller="pupil" asp-action="index" class="btn btn-primary m-1">Cancel</a>
+    </div>
+</form>
